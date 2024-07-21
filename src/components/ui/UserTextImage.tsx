@@ -16,7 +16,7 @@ const UserTextImage = () => {
             <div className="flex items-center gap-1">
                 <UserNameText />
                 <h1 className="font-semibold text-lg text-purple-950">{trimmedName}</h1>
-                <CgProfile className="text-3xl ml-3 hover:text-green-900 duration-300 cursor-pointer" />
+                <CgProfile className="sm:text-3xl text-2xl ml-3 hover:text-green-900 duration-300 cursor-pointer" />
             </div>
         </div>
     );

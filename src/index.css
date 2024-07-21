@@ -2,6 +2,7 @@
 @tailwind utilities;
 @tailwind variants;
 
+
 /* default  */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -11,4 +12,12 @@ input::-webkit-inner-spin-button {
 
 input[type="number"] {
   -moz-appearance: textfield;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
