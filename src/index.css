@@ -2,7 +2,6 @@
 @tailwind utilities;
 @tailwind variants;
 
-
 /* default  */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

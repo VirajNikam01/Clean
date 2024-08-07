@@ -4,9 +4,11 @@ type TintroTextProps = {
 }
 const IntroText = ({ text }: TintroTextProps) => {
     return (
-        <h1 className="text-4xl sm:text-5xl font-semibold text-white text-center my-5">
-            Ready to <b className="font-extrabold">{text}</b>
-        </h1>
+        <div className="">
+            <h1 className="text-4xl sm:text-5xl font-bold inline-block px-10 py-2 border-2 border-whites text-white text-center mb-4">
+                {text}
+            </h1>
+        </div>
     )
 }
 

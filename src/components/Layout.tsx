@@ -1,14 +1,20 @@
 import Header from './Header'
+import CheckInternet from './CheckInternet'
 
 type LayoutProps = {
-    children: React.ReactNode;
+    children?: React.ReactNode;
 }
 
 const Layout = ({ children }: LayoutProps) => {
+
+
+
     return (
         <div className=''>
-            <Header />
-            {children}
+            <CheckInternet >
+                <Header />
+                {children}
+            </CheckInternet>
         </div>
     )
 }

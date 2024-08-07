@@ -15,7 +15,7 @@ const UserNameText = () => {
   }, []);
 
   return (
-    <div className=' min-w-20 flex justify-end text-purple-800'>
+    <div className=' min-w-20 flex justify-end text-white'>
       <h1 className='font-bold text-lg text-right w-fit '>
         <TextTransition springConfig={presets.wobbly}>{TEXTS[index % TEXTS.length]}</TextTransition>
       </h1>

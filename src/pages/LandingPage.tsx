@@ -1,12 +1,20 @@
+import AllCategory from "../components/AllCategory"
 import Banner from "../components/Banner"
-import Layout from "../components/Layout"
+import Footer from "../components/Footer"
+import Header from "../components/Header"
+import NewCollection from "../components/NewCollection"
 
 const LandingPage = () => {
     return (
-        <Layout>
+        <div className="">
+            <div className="relative">
+                <div className="fixed top-0 z-20 w-full"><Header /></div>
+            </div>
             <Banner />
-            <h1>Landing Page Component</h1>
-        </Layout>
+            <NewCollection />
+            <AllCategory />
+            <Footer />
+        </div>
     )
 }
 

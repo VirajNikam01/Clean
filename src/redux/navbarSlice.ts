@@ -15,9 +15,12 @@ export const navBar = createSlice({
     reducers: {
         toogle(state) {
             state.isNavbarOpen = !state.isNavbarOpen
-        }
+        },
+        closeNavbar(state) {
+            state.isNavbarOpen = false
+        },
     }
 })
 
-export const {toogle} = navBar.actions
+export const { toogle, closeNavbar } = navBar.actions
 export default navBar.reducer
