@@ -12,7 +12,7 @@ const Footer = () => {
                     <h1 className="font-medium mb-6">SUBSCRIBE TO OUR NEWSLETTER</h1>
                     <form action="">
                         <input type="email" placeholder="Enter Email..." className="bg-slate-50 p-1 outline-none border-b-2" />
-                        <button className="border rounded-lg px-10 py-1 hover:bg-purple-400 duration-200">Subscribe</button>
+                        <button className="border rounded-lg px-3 sm:px-10 py-1 hover:bg-purple-400 duration-200">Subscribe</button>
                     </form>
                 </div>
             </div>

@@ -12,7 +12,9 @@ const Layout = ({ children }: LayoutProps) => {
     return (
         <div className=''>
             <CheckInternet >
-                <Header />
+                <div className='bg-black'>
+                    <Header />
+                </div>
                 {children}
             </CheckInternet>
         </div>

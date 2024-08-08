@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -11,10 +12,15 @@ type ProductImageAnimProps = {
 }
 
 const ProductImageAnim = ({ src, hoverSrc, name, original_prize, selling_prize, id }: ProductImageAnimProps) => {
+    console.log(id);
+    const navigate = useNavigate()
+    const handelProductClick = () => {
+        navigate(`/details/new/${id}`)
+    }
 
 
     return (
-        <div className="w-full relative h-full flex items-center justify-center border border-slate-300 cursor-pointer ">
+        <div onClick={handelProductClick} className="w-full relative h-full flex items-center justify-center border border-slate-300 cursor-pointer ">
             <div className="w-full h-full">
                 <div className="w-full sm:min-h-[80%]">
                     <img

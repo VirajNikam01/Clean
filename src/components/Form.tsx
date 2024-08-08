@@ -3,7 +3,6 @@ import { Button, Input, SubHeading } from "./ui/ui-components";
 import { addUserWithDataToFireStore, signInUser } from "../firebase/helper";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
-import { useDispatch } from "react-redux";
 
 export type FormValues = {
     name: string;
@@ -33,6 +32,8 @@ const Form = ({ signInForm }: FormProps) => {
                 toast.success('User Registered ⭐')
             } else {
                 const uid = await signInUser(event)
+                console.log(uid);
+                
                 navigate('/')
                 toast.success('Logged In ⭐')
 
