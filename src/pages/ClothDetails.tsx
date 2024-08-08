@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom"
 import ClothInfo from "../components/ClothInfo"
 import { newInDetails } from "../utils/data"
-import React, { MouseEvent, useEffect, useMemo, useState } from "react"
+import  {  useEffect, useMemo, useState } from "react"
 import Footer from "../components/Footer"
 import MoveToTopProps from '../components/MoveToTop'
 import Header from "../components/Header"
