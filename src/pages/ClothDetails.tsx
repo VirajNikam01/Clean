@@ -1,20 +1,22 @@
-import { useParams } from "react-router-dom"
+import { useNavigate, useParams } from "react-router-dom"
 import ClothInfo from "../components/ClothInfo"
 import { newInDetails } from "../utils/data"
-import  {  useEffect, useMemo, useState } from "react"
+import { useEffect, useMemo, useState } from "react"
 import Footer from "../components/Footer"
 import MoveToTopProps from '../components/MoveToTop'
 import Header from "../components/Header"
+import { IoIosArrowBack } from "react-icons/io";
+
 
 const ClothDetails = () => {
     const [productData, setProductData] = useState({ src: '', prize: 0 })
-    const { id, type } = useParams()
+    const { id } = useParams()
 
-    console.log(id, type, 'Search Fields');
+    const navigate = useNavigate()
 
     const product = useMemo(() => {
         return newInDetails.filter((product) => {
-            return product.id.toString() === id && product.type === type
+            return product.id.toString() === id
         })[0]
     }, [])
 
@@ -33,8 +35,12 @@ const ClothDetails = () => {
             <div className="w-full bg-black">
                 <Header />
             </div>
+            <div className="m-3 sm:m-4">
+                <button onClick={() => navigate(-1)} className="border-2 border-black p-1 rounded-full"><IoIosArrowBack className="sm:text-3xl" /></button>
 
-            <div className="px-3 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-0 my-6 sm:my-16">
+            </div>
+
+            <div className="px-3 grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-0 ">
                 <div className=" sm:justify-self-center	flex gap-5">
                     <div className="similar-images border-2 w-32 p-2 h-full flex flex-col justify-evenly overflow-y-auto">
                         <div className="box w-full">

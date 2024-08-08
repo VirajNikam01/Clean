@@ -5,7 +5,7 @@ import { IoCartOutline } from "react-icons/io5";
 import UserTextImage from "./ui/UserTextImage"
 import NavLinks from "./ui/NavLinks"
 import { motion, useScroll, useMotionValueEvent } from "framer-motion"
-import { useEffect, useState } from 'react';
+import {  useState } from 'react';
 
 
 

@@ -2,6 +2,9 @@ import { useNavigate } from "react-router-dom";
 
 
 
+
+
+
 type ProductImageAnimProps = {
     src: string,
     hoverSrc: string,
@@ -15,14 +18,14 @@ const ProductImageAnim = ({ src, hoverSrc, name, original_prize, selling_prize, 
     console.log(id);
     const navigate = useNavigate()
     const handelProductClick = () => {
-        navigate(`/details/new/${id}`)
+        navigate(`/details/${id}`)
     }
 
 
     return (
-        <div onClick={handelProductClick} className="w-full relative h-full flex items-center justify-center border border-slate-300 cursor-pointer ">
+        <div className="w-full relative h-full flex items-center justify-center border border-slate-300 cursor-pointer ">
             <div className="w-full h-full">
-                <div className="w-full sm:min-h-[80%]">
+                <div onClick={handelProductClick} className="w-full sm:min-h-[80%]">
                     <img
                         className="duration-200 w-full absolute top-0 left-0 hover:opacity-0"
                         src={src}
@@ -36,10 +39,13 @@ const ProductImageAnim = ({ src, hoverSrc, name, original_prize, selling_prize, 
 
                 </div>
                 <div className="p-5">
-                    <h1 className="font-medium">{name}</h1>
-                    <div>
-                        <span className="line-through">₹ {original_prize} </span> <span className="ml-2 font-medium"> ₹{selling_prize}</span>
+                    <div onClick={handelProductClick} className="details">
+                        <h1 className="font-medium">{name}</h1>
+                        <div>
+                            <span className="line-through">₹ {original_prize} </span> <span className="ml-2 font-medium"> ₹{selling_prize}</span>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>

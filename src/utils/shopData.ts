@@ -1,4 +1,4 @@
-export const newInDetails = [
+export const shopData = [
     {
         src: "https://images.unsplash.com/photo-1647712481132-8b49c0b7b0d4?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         hoverSrc: 'https://images.unsplash.com/photo-1647712483127-edeafa41b68f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
@@ -8,7 +8,7 @@ export const newInDetails = [
         id: 100,
         type: 'new',
         description: 'Meet the Vibe Check Pants – your go-to for making a bold statement. With striking color contrasts and unique pocket details, these pants are perfect for those who dare to stand out.',
-        category: 'male'
+        category: 'female'
 
     },
     {
@@ -44,4 +44,5 @@ export const newInDetails = [
         description: 'Meet the Vibe Check Pants – your go-to for making a bold statement. With striking color contrasts and unique pocket details, these pants are perfect for those who dare to stand out.',
         category: 'male'
     },
+
 ]
